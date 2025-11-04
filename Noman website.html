@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulla All Noman - Mechanical Engineering Researcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .section-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #667eea;
+        }
+        .photo-placeholder {
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+            border: 3px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-gray-800">Abdulla All Noman</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#research" class="nav-link text-gray-700 hover:text-blue-600">Research</a>
+                    <a href="#publications" class="nav-link text-gray-700 hover:text-blue-600">Publications</a>
+                    <a href="#experience" class="nav-link text-gray-700 hover:text-blue-600">Experience</a>
+                    <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600">Skills</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700">About</a>
+                <a href="#research" class="block px-3 py-2 text-gray-700">Research</a>
+                <a href="#publications" class="block px-3 py-2 text-gray-700">Publications</a>
+                <a href="#experience" class="block px-3 py-2 text-gray-700">Experience</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-700">Skills</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg py-20 pt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white section-fade">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">Abdulla All Noman</h1>
+                    <h2 class="text-2xl md:text-3xl mb-6 text-blue-100">Mechanical Engineering Researcher</h2>
+                    <p class="text-xl mb-8 text-blue-50">Additive Manufacturing & Biomechanics</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300">Get In Touch</a>
+                        <a href="#publications" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">View Research</a>
+                    </div>
+                </div>
+                <div class="section-fade">
+                    <div class="photo-placeholder w-80 h-80 mx-auto rounded-full flex justify-center items-center overflow-hidden shadow-lg border-4 border-gray-200">
+  <img src="\Picture of Noman.jpg"
+       alt="Abdulla All Noman"
+       class="w-full h-full object-cover rounded-full" />
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Papers Showcase Slider -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Latest Research Publications</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
+                <p class="text-gray-600">Cutting-edge research in additive manufacturing and biomechanics</p>
+            </div>
+            
+            <!-- Slider Container -->
+            <div class="relative overflow-hidden">
+                <div id="research-slider" class="flex transition-transform duration-500 ease-in-out">
+                    <!-- Slide 1 -->
+                    <div class="w-full flex-shrink-0">
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg shadow-lg card-hover">
+                                <div class="bg-green-500 text-white px-3 py-1 rounded-full text-sm inline-block mb-4">Q1 Journal - IF 7.9</div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-3">Recent Advancements in Additively Manufactured Hip Implant Design Using Topology Optimization Technique</h3>
+                                <p class="text-gray-600 text-sm mb-4">Revolutionary topology optimization techniques for next-generation medical implants...</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-500">Results in Engineering</span>
+                                    <a href="https://doi.org/10.1016/j.rineng.2025.103932" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white px-3 py-1 rounded text-xs hover:bg-green-700">View</a>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg shadow-lg card-hover">
+                                <div class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm inline-block mb-4">Q4 Journal - IF 1.1</div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-3">FEA of Hip Implant Using AM Materials</h3>
+                                <p class="text-gray-600 text-sm mb-4">Comprehensive analysis of hip implant performance under various loading conditions...</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-500">JMES</span>
+                                    <a href="https://doi.org/10.15282/jmes.19.2.2025.6.0834" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-3 py-1 rounded text-xs hover:bg-blue-700">View</a>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg shadow-lg card-hover">
+                                <div class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm inline-block mb-4">Elsevier</div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-3">Composite Glass Fiber Mechanical Analysis</h3>
+                                <p class="text-gray-600 text-sm mb-4">Advanced FEA study of composite materials under tensile loading conditions...</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-500">Materials Today</span>
+                                    <a href="https://dx.doi.org/10.1016/j.matpr.2023.05.062" target="_blank" rel="noopener noreferrer" class="bg-purple-600 text-white px-3 py-1 rounded text-xs hover:bg-purple-700">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="w-full flex-shrink-0">
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg shadow-lg card-hover">
+                                <div class="bg-red-500 text-white px-3 py-1 rounded-full text-sm inline-block mb-4">Q4 Journal - IF 1.0</div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-3">Lattice Structures Hip Implant Analysis</h3>
+                                <p class="text-gray-600 text-sm mb-4">Optimization of different lattice structures for lightweight hip implant design...</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-500">IJAME</span>
+                                    <a href="https://doi.org/10.15282/ijame.22.3.2025.17.0974" target="_blank" rel="noopener noreferrer" class="bg-red-600 text-white px-3 py-1 rounded text-xs hover:bg-red-700">View</a>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-lg shadow-lg card-hover">
+                                <div class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm inline-block mb-4">Elsevier</div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-3">Carbon Fiber Orientation Effects</h3>
+                                <p class="text-gray-600 text-sm mb-4">Investigation of fiber orientation impact on mechanical properties of composites...</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-500">Materials Today</span>
+                                    <a href="https://dx.doi.org/10.1016/j.matpr.2023.02.132" target="_blank" rel="noopener noreferrer" class="bg-yellow-600 text-white px-3 py-1 rounded text-xs hover:bg-yellow-700">View</a>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-lg shadow-lg card-hover">
+                                <div class="bg-indigo-500 text-white px-3 py-1 rounded-full text-sm inline-block mb-4">Q4 Journal</div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-3">Industry 4.0 Implementation Analysis</h3>
+                                <p class="text-gray-600 text-sm mb-4">Empirical analysis of I4.0 enablers in Indian manufacturing using DEMATEL...</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-500">IJIMS</span>
+                                    <a href="https://dx.doi.org/10.1504/IJIMS.2023.10048417" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 text-white px-3 py-1 rounded text-xs hover:bg-indigo-700">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Dots -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="slider-dot w-3 h-3 rounded-full bg-blue-600 transition-all duration-300" data-slide="0"></button>
+                    <button class="slider-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300" data-slide="1"></button>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button id="prev-slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 hover:bg-gray-50 transition-all duration-300">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button id="next-slide" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 hover:bg-gray-50 transition-all duration-300">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="section-fade">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Biography</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        I am a dedicated Mechanical Engineering Researcher specializing in Metal Additive Manufacturing and Biomechanics. Currently pursuing my MSc by Research at Universiti Malaysia Pahang Al-Sultan Abdullah, I focus on developing innovative solutions for biomedical implant design through advanced manufacturing techniques.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        My research combines cutting-edge technologies like topology optimization, finite element analysis, and machine learning to create next-generation medical devices. With a strong background in both academic research and industrial applications, I bridge the gap between theoretical knowledge and practical implementation.
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-gray-700 font-semibold">Fully Funded Scholarship Recipient</span>
+                    </div>
+                </div>
+                <div class="section-fade">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Current Research Focus</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-600 mb-3">Topology-Optimized Hip Implant Design Using Additive Manufacturing Materials</h4>
+                        <p class="text-gray-600 mb-4">
+                            Developing next-generation hip implants through advanced topology optimization techniques, focusing on weight reduction while maintaining biomechanical integrity and improving patient outcomes.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">3D Printing</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">FEA</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Biomechanics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests -->
+    <section id="research" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Research Interests</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover section-fade">
+                    <div class="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 8.172V5L8 4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Metal Additive Manufacturing</h3>
+                    <p class="text-gray-600">Advanced 3D printing techniques for creating complex geometries and customized medical devices with superior material properties.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover section-fade">
+                    <div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Biomedical Implant Design</h3>
+                    <p class="text-gray-600">Developing patient-specific implants with optimized mechanical properties for improved biocompatibility and longevity.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover section-fade">
+                    <div class="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Topology Optimization</h3>
+                    <p class="text-gray-600">Mathematical optimization methods to achieve optimal material distribution for lightweight yet strong structural designs.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover section-fade">
+                    <div class="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Finite Element Analysis</h3>
+                    <p class="text-gray-600">Advanced computational methods using ANSYS for predicting mechanical behavior and optimizing design performance.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover section-fade">
+                    <div class="bg-yellow-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Machine Learning Applications</h3>
+                    <p class="text-gray-600">Implementing ML algorithms in MATLAB for structural failure detection and predictive maintenance in engineering systems.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover section-fade">
+                    <div class="bg-indigo-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Industry 4.0 & AgriTech</h3>
+                    <p class="text-gray-600">Sustainable innovation in agricultural technology and smart manufacturing systems for the future of industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Publications</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Peer-reviewed research contributions to the fields of additive manufacturing, biomechanics, and composite materials</p>
+            </div>
+            
+            <!-- Publications Slider Container -->
+            <div class="relative overflow-hidden">
+                <div id="publications-slider" class="flex transition-transform duration-500 ease-in-out">
+                    <!-- Slide 1 - First 3 Publications -->
+                    <div class="w-full flex-shrink-0">
+                        <div class="space-y-8">
+                            <!-- Publication 1 -->
+                            <div class="bg-gray-50 p-8 rounded-lg shadow-lg card-hover">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-green-100 px-3 py-1 rounded-full">
+                                        <span class="text-green-800 text-sm font-semibold">Q1 Journal - IF 7.9</span>
+                                    </div>
+                                    <span class="text-gray-500 text-sm">2025</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Recent Advancements in Additively Manufactured Hip Implant Design Using Topology Optimization Technique</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">The recent advancement of additive manufacturing (AM) offers many benefits for the medical sector, which is revolutionizing modern bone repair surgery for patients, including those with damaged hip joints. Consequently, AM enables the fabrication of hip replacements made of alloys like titanium, cobalt-chromium, stainless steel, and their alloys...</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">Results in Engineering</span>
+                                    <a href="https://doi.org/10.1016/j.rineng.2025.103932" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition duration-300">View Paper</a>
+                                </div>
+                            </div>
+
+                            <!-- Publication 2 -->
+                            <div class="bg-gray-50 p-8 rounded-lg shadow-lg card-hover">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-blue-100 px-3 py-1 rounded-full">
+                                        <span class="text-blue-800 text-sm font-semibold">Q3 Journal - IF 1.1</span>
+                                    </div>
+                                    <span class="text-gray-500 text-sm">2025</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Finite Element Analysis of Hip Implant Using Additive Manufacturing Materials in Different Loading Conditions</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">A hip implant is a crucial medical device designed to restore mobility and relieve pain for an individual with a hip joint with degenerative diseases or injury. Conventional manufacturing techniques have limitations in producing personalized implants. In contrast, additive manufacturing (AM) offers a solution...</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">Journal of Mechanical Engineering and Sciences</span>
+                                    <a href="https://doi.org/10.15282/jmes.19.2.2025.6.0834" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition duration-300">View Paper</a>
+                                </div>
+                            </div>
+
+                            <!-- Publication 3 -->
+                            <div class="bg-gray-50 p-8 rounded-lg shadow-lg card-hover">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-blue-100 px-3 py-1 rounded-full">
+                                        <span class="text-blue-800 text-sm font-semibold">Q3 Journal - IF 1.0</span>
+                                    </div>
+                                    <span class="text-gray-500 text-sm">2025</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Finite Element Analysis of Different Lattice Structures Hip Implant Using Additive Manufacturing Materials</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">A hip implant is surgically placed to replace damaged components and restore the patient's mobility. Although hip implants are widely used, there is a need to improve their mechanical performance while minimizing weight. Traditional designs often compromise between strength and weight...</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">International Journal of Automotive and Mechanical Engineering</span>
+                                    <a href="https://doi.org/10.15282/ijame.22.3.2025.17.0974" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition duration-300">View Paper</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 - Next 3 Publications -->
+                    <div class="w-full flex-shrink-0">
+                        <div class="space-y-8">
+                            <!-- Publication 4 -->
+                            <div class="bg-gray-50 p-8 rounded-lg shadow-lg card-hover">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-purple-100 px-3 py-1 rounded-full">
+                                        <span class="text-purple-800 text-sm font-semibold">Elsevier</span>
+                                    </div>
+                                    <span class="text-gray-500 text-sm">2023</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Study to analyze the mechanical strength of composite glass fiber laminated with resin epoxy, resin polyester, and PVC foam under tensile loading conditions by numerically using finite element analysis via Ansys</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">With the development of material sciences, different kinds of materials are being developed and studied continuously. In order to significantly reduce weight and reduce emissions, composite materials are employed in aerospace, automobile, mechanical, and wind industries...</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">Materials Today: Proceedings</span>
+                                    <a href="https://dx.doi.org/10.1016/j.matpr.2023.05.062" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition duration-300">View Paper</a>
+                                </div>
+                            </div>
+
+                            <!-- Publication 5 -->
+                            <div class="bg-gray-50 p-8 rounded-lg shadow-lg card-hover">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-purple-100 px-3 py-1 rounded-full">
+                                        <span class="text-purple-800 text-sm font-semibold">Elsevier</span>
+                                    </div>
+                                    <span class="text-gray-500 text-sm">2023</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Investigate the mechanical strength of laminated composite carbon fiber with different fiber orientations by numerically using finite element analysis</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">The main objective of this study is to investigate the effect of fiber orientation on the mechanical property of carbon fiber composite material under the tensile loading condition and the dynamic response analysis using finite element analysis...</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">Materials Today: Proceedings</span>
+                                    <a href="https://dx.doi.org/10.1016/j.matpr.2023.02.132" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition duration-300">View Paper</a>
+                                </div>
+                            </div>
+
+                            <!-- Publication 6 -->
+                            <div class="bg-gray-50 p-8 rounded-lg shadow-lg card-hover">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-orange-100 px-3 py-1 rounded-full">
+                                        <span class="text-orange-800 text-sm font-semibold">Q4 Journal</span>
+                                    </div>
+                                    <span class="text-gray-500 text-sm">2023</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Empirical analysis of I4.0 implementation enablers in context of Indian manufacturing industries using DEMATEL approach</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">Industry 4.0 (I4.0) revolution is the cyber-physical transformation and a growing trend towards automation in the manufacturing industry. This study empirically examines the critical enablers for I4.0 adoption in Indian manufacturing industries...</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">International Journal of Internet Manufacturing and Services</span>
+                                    <a href="https://dx.doi.org/10.1504/IJIMS.2023.10048417" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition duration-300">View Paper</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Dots -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="publications-dot w-3 h-3 rounded-full bg-blue-600 transition-all duration-300" data-slide="0"></button>
+                    <button class="publications-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300" data-slide="1"></button>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button id="prev-publications" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 hover:bg-gray-50 transition-all duration-300">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button id="next-publications" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 hover:bg-gray-50 transition-all duration-300">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Experience & Education</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Experience -->
+                <div class="section-fade">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8">Work Experience</h3>
+                    <div class="space-y-8">
+                        <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-800">Graduate Research Assistant</h4>
+                                    <p class="text-blue-600 font-semibold">Universiti Malaysia Pahang Al-Sultan Abdullah</p>
+                                </div>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Current</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Conducting advanced research in mechanical engineering with focus on additive manufacturing and biomechanics. Fully funded scholarship recipient.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Research</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">3D Printing</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Biomechanics</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-800">Production and Design Engineer</h4>
+                                    <p class="text-blue-600 font-semibold">Young Optics BD Ltd</p>
+                                </div>
+                                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Previous</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Responsible for automated machine setup, fixture design, quality troubleshooting, and robotics maintenance in manufacturing environment.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Manufacturing</span>
+                                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Automation</span>
+                                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Quality Control</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="section-fade">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8">Education</h3>
+                    <div class="space-y-8">
+                        <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-800">Master of Science (by Research)</h4>
+                                    <p class="text-blue-600 font-semibold">Mechanical Engineering</p>
+                                    <p class="text-gray-600">Universiti Malaysia Pahang Al-Sultan Abdullah</p>
+                                </div>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Ongoing</span>
+                            </div>
+                            <p class="text-gray-600">Specializing in additive manufacturing and biomechanics with focus on topology-optimized hip implant design.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-800">Bachelor of Science</h4>
+                                    <p class="text-blue-600 font-semibold">Mechanical Engineering</p>
+                                    <p class="text-gray-600">Lovely Professional University, Punjab, India</p>
+                                </div>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">1st Class</span>
+                            </div>
+                            <p class="text-gray-600 mb-2">CGPA: 7.90/10.0</p>
+                            <p class="text-gray-600">Strong foundation in mechanical engineering principles, design, and manufacturing processes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Certifications -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Digital Skills & Certifications</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <!-- Digital Skills -->
+            <div class="mb-16 section-fade">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Core Digital Skills</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-6 rounded-lg text-white text-center card-hover">
+                        <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">SolidWorks</h4>
+                        <p class="text-blue-100">3D CAD Design & Modeling</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 p-6 rounded-lg text-white text-center card-hover">
+                        <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">AutoCAD</h4>
+                        <p class="text-green-100">Technical Drawing & Design</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 p-6 rounded-lg text-white text-center card-hover">
+                        <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">ANSYS</h4>
+                        <p class="text-purple-100">Finite Element Analysis</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-500 to-red-600 p-6 rounded-lg text-white text-center card-hover">
+                        <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">MATLAB</h4>
+                        <p class="text-red-100">Machine Learning & Analysis</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-orange-500 to-orange-600 p-6 rounded-lg text-white text-center card-hover">
+                        <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Creo</h4>
+                        <p class="text-orange-100">Parametric 3D Modeling</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-teal-500 to-teal-600 p-6 rounded-lg text-white text-center card-hover">
+                        <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Fusion 360</h4>
+                        <p class="text-teal-100">Cloud-based CAD/CAM</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-gray-600 to-gray-700 p-6 rounded-lg text-white text-center card-hover">
+                        <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">CNC Programming</h4>
+                        <p class="text-gray-100">G-Code & Machining</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-yellow-500 to-yellow-600 p-6 rounded-lg text-white text-center card-hover">
+                        <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Python</h4>
+                        <p class="text-yellow-100">Programming & Automation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="section-fade">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Professional Certifications</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="text-lg font-bold text-gray-800">Computational Fluid Dynamics Using Ansys</h4>
+                            <span class="text-sm text-gray-500">04/2024</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">UMPSA</p>
+                        <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm inline-block">Advanced Training</div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="text-lg font-bold text-gray-800">Writing High Impact Journal Paper</h4>
+                            <span class="text-sm text-gray-500">06/2024</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">UMPSA</p>
+                        <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm inline-block">Research Skills</div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="text-lg font-bold text-gray-800">Autodesk CAD/CAM/CAE Specialization</h4>
+                            <span class="text-sm text-gray-500">01/2021</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Autodesk | Coursera</p>
+                        <div class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm inline-block">Professional Certificate</div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="text-lg font-bold text-gray-800">Wind Energy</h4>
+                            <span class="text-sm text-gray-500">12/2020</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Technical University of Denmark | Coursera</p>
+                        <div class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm inline-block">Renewable Energy</div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="text-lg font-bold text-gray-800">3D Printing Revolution</h4>
+                            <span class="text-sm text-gray-500">10/2020</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">University of Illinois | Coursera</p>
+                        <div class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm inline-block">Additive Manufacturing</div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="text-lg font-bold text-gray-800">Python Basics</h4>
+                            <span class="text-sm text-gray-500">10/2020</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">University of Michigan | Coursera</p>
+                        <div class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm inline-block">Programming</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 gradient-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 section-fade">
+                <h2 class="text-3xl font-bold text-white mb-3">Get In Touch</h2>
+                <div class="w-20 h-1 bg-white mx-auto mb-3"></div>
+                <p class="text-blue-100 max-w-xl mx-auto text-sm">Interested in collaboration, research opportunities, or discussing innovative engineering solutions? I'd love to hear from you.</p>
+            </div>
+            
+            <!-- Contact Information - Full Width -->
+            <div class="section-fade">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <div class="bg-white bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold mb-1">Email</h3>
+                        <a href="mailto:nomannoman2679@gmail.com" class="text-blue-100 hover:text-white transition duration-300 break-all text-sm">nomannoman2679@gmail.com</a>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-white bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold mb-1">Phone</h3>
+                        <a href="tel:+601123910899" class="text-blue-100 hover:text-white transition duration-300 text-sm">+60 11 2391 0899</a>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-white bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold mb-1">LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/noman2679" target="_blank" rel="noopener noreferrer" class="text-blue-100 hover:text-white transition duration-300 text-sm">linkedin.com/in/noman2679</a>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-white bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525-.498 1.148-.861 1.847-1.065.699-.204 1.434-.248 2.175-.129.741.119 1.444.377 2.08.762.636.385 1.19.897 1.637 1.513.447.616.781 1.325.987 2.096.206.771.282 1.587.225 2.413-.057.826-.244 1.635-.553 2.394-.309.759-.738 1.453-1.268 2.052-.53.599-1.152 1.092-1.84 1.458-.688.366-1.427.599-2.186.688-.759.089-1.522.034-2.258-.163-.736-.197-1.428-.527-2.047-.975-.619-.448-1.152-.999-1.576-1.629-.424-.63-.731-1.327-.908-2.062-.177-.735-.223-1.494-.136-2.244.087-.75.295-1.476.615-2.147.32-.671.745-1.274 1.258-1.783.513-.509 1.105-.916 1.751-1.204z"/>
+                                <path d="M8.132 14.747c-.069-.138-.103-.29-.103-.456 0-.166.034-.318.103-.456.069-.138.164-.248.285-.33.121-.082.26-.123.417-.123.157 0 .296.041.417.123.121.082.216.192.285.33.069.138.103.29.103.456 0 .166-.034.318-.103.456-.069.138-.164.248-.285.33-.121.082-.26.123-.417.123-.157 0-.296-.041-.417-.123-.121-.082-.216-.192-.285-.33zm7.736 0c-.069-.138-.103-.29-.103-.456 0-.166.034-.318.103-.456.069-.138.164-.248.285-.33.121-.082.26-.123.417-.123.157 0 .296.041.417.123.121.082.216.192.285.33.069.138.103.29.103.456 0 .166-.034.318-.103.456-.069.138-.164.248-.285.33-.121.082-.26.123-.417.123-.157 0-.296-.041-.417-.123-.121-.082-.216-.192-.285-.33z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold mb-1">ORCID</h3>
+                        <a href="https://orcid.org/0000-0002-1084-7817" target="_blank" rel="noopener noreferrer" class="text-blue-100 hover:text-white transition duration-300 text-sm">0000-0002-1084-7817</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Robot Bot with Message Form -->
+        <div id="robot-bot" class="fixed bottom-6 right-6 z-50">
+            <!-- Robot Container -->
+            <div class="relative">
+                <!-- Chat Bubble (Initially Hidden) -->
+                <div id="chat-bubble" class="absolute bottom-20 right-0 w-80 bg-white rounded-2xl shadow-2xl transform scale-0 transition-all duration-300 origin-bottom-right">
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 rounded-t-2xl">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                                <span class="font-semibold">Message Bot</span>
+                            </div>
+                            <button id="close-chat" class="text-white hover:text-gray-200 transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <form id="robot-form" class="p-4 space-y-4">
+                        <div>
+                            <label for="robot-name" class="block text-gray-700 text-sm font-semibold mb-1">Name</label>
+                            <input type="text" id="robot-name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="robot-email" class="block text-gray-700 text-sm font-semibold mb-1">Email</label>
+                            <input type="email" id="robot-email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="your.email@example.com" required>
+                        </div>
+                        <div>
+                            <label for="robot-message" class="block text-gray-700 text-sm font-semibold mb-1">Message</label>
+                            <textarea id="robot-message" name="message" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-2 px-4 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition duration-300 transform hover:scale-105">
+                            Send Message 🚀
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Robot Character -->
+                <div id="robot-character" class="relative cursor-pointer transform hover:scale-110 transition-all duration-300">
+                    <!-- Robot SVG -->
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl shadow-lg flex items-center justify-center animate-bounce">
+                        <svg class="w-10 h-10 text-white" viewBox="0 0 100 100" fill="currentColor">
+                            <!-- Robot Head -->
+                            <rect x="25" y="20" width="50" height="40" rx="8" fill="currentColor"/>
+                            <!-- Eyes -->
+                            <circle cx="35" cy="35" r="4" fill="#1e40af"/>
+                            <circle cx="65" cy="35" r="4" fill="#1e40af"/>
+                            <!-- Mouth -->
+                            <rect x="40" y="45" width="20" height="3" rx="2" fill="#1e40af"/>
+                            <!-- Body -->
+                            <rect x="30" y="60" width="40" height="30" rx="6" fill="currentColor"/>
+                            <!-- Arms -->
+                            <rect x="15" y="65" width="12" height="4" rx="2" fill="currentColor"/>
+                            <rect x="73" y="65" width="12" height="4" rx="2" fill="currentColor"/>
+                            <!-- Pen in hand -->
+                            <rect x="85" y="63" width="2" height="8" fill="#fbbf24"/>
+                            <circle cx="86" cy="62" r="1" fill="#f59e0b"/>
+                        </svg>
+                    </div>
+                    
+                    <!-- Notification Badge -->
+                    <div class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center animate-pulse">
+                        ✉️
+                    </div>
+                    
+                    <!-- Floating Animation -->
+                    <div class="absolute inset-0 rounded-2xl bg-blue-400 opacity-20 animate-ping"></div>
+                </div>
+
+                <!-- Speech Bubble Pointer -->
+                <div id="speech-pointer" class="absolute bottom-16 right-4 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white transform scale-0 transition-all duration-300"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2025 Abdulla All Noman. All rights reserved.</p>
+                <p class="text-gray-500 text-sm mt-2">Mechanical Engineering Researcher | Additive Manufacturing & Biomechanics</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Robot Bot Functionality
+        const robotCharacter = document.getElementById('robot-character');
+        const chatBubble = document.getElementById('chat-bubble');
+        const speechPointer = document.getElementById('speech-pointer');
+        const closeChat = document.getElementById('close-chat');
+        const robotForm = document.getElementById('robot-form');
+        
+        let chatOpen = false;
+        
+        // Toggle chat bubble
+        function toggleChat() {
+            chatOpen = !chatOpen;
+            if (chatOpen) {
+                chatBubble.classList.remove('scale-0');
+                chatBubble.classList.add('scale-100');
+                speechPointer.classList.remove('scale-0');
+                speechPointer.classList.add('scale-100');
+            } else {
+                chatBubble.classList.remove('scale-100');
+                chatBubble.classList.add('scale-0');
+                speechPointer.classList.remove('scale-100');
+                speechPointer.classList.add('scale-0');
+            }
+        }
+        
+        // Event listeners for robot bot
+        robotCharacter.addEventListener('click', toggleChat);
+        closeChat.addEventListener('click', toggleChat);
+        
+        // Robot form submission
+        robotForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('robot-name').value;
+            const email = document.getElementById('robot-email').value;
+            const message = document.getElementById('robot-message').value;
+            
+            // Create mailto link
+            const subject = encodeURIComponent(`Message from ${name} via Portfolio Robot Bot`);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+            const mailtoLink = `mailto:nomannoman2679@gmail.com?subject=${subject}&body=${body}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Reset form and close chat
+            this.reset();
+            toggleChat();
+            
+            // Show success message
+            alert('🤖 Message sent! Your email client should open with the pre-filled message.');
+        });
+        
+        // Close chat when clicking outside
+        document.addEventListener('click', function(e) {
+            if (chatOpen && !document.getElementById('robot-bot').contains(e.target)) {
+                toggleChat();
+            }
+        });
+
+        // Animate sections on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = '0.1s';
+                    entry.target.classList.add('section-fade');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section > div').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Research Papers Slider
+        let currentSlide = 0;
+        const slider = document.getElementById('research-slider');
+        const dots = document.querySelectorAll('.slider-dot');
+        const totalSlides = 2;
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.remove('bg-gray-300');
+                    dot.classList.add('bg-blue-600');
+                } else {
+                    dot.classList.remove('bg-blue-600');
+                    dot.classList.add('bg-gray-300');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        // Event listeners for slider
+        document.getElementById('next-slide').addEventListener('click', nextSlide);
+        document.getElementById('prev-slide').addEventListener('click', prevSlide);
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                updateSlider();
+            });
+        });
+
+        // Auto-slide every 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // Publications Slider
+        let currentPublicationsSlide = 0;
+        const publicationsSlider = document.getElementById('publications-slider');
+        const publicationsDots = document.querySelectorAll('.publications-dot');
+        const totalPublicationsSlides = 2;
+
+        function updatePublicationsSlider() {
+            publicationsSlider.style.transform = `translateX(-${currentPublicationsSlide * 100}%)`;
+            
+            publicationsDots.forEach((dot, index) => {
+                if (index === currentPublicationsSlide) {
+                    dot.classList.remove('bg-gray-300');
+                    dot.classList.add('bg-blue-600');
+                } else {
+                    dot.classList.remove('bg-blue-600');
+                    dot.classList.add('bg-gray-300');
+                }
+            });
+        }
+
+        function nextPublicationsSlide() {
+            currentPublicationsSlide = (currentPublicationsSlide + 1) % totalPublicationsSlides;
+            updatePublicationsSlider();
+        }
+
+        function prevPublicationsSlide() {
+            currentPublicationsSlide = (currentPublicationsSlide - 1 + totalPublicationsSlides) % totalPublicationsSlides;
+            updatePublicationsSlider();
+        }
+
+        // Event listeners for publications slider
+        document.getElementById('next-publications').addEventListener('click', nextPublicationsSlide);
+        document.getElementById('prev-publications').addEventListener('click', prevPublicationsSlide);
+
+        publicationsDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentPublicationsSlide = index;
+                updatePublicationsSlider();
+            });
+        });
+
+        // Add active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-blue-600');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('text-blue-600');
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'985d69c221ea7a7f',t:'MTc1OTAwMTQwMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
